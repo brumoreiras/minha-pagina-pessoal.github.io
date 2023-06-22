@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Sejá bem vindo</title>
 </head>
 
 <body>
     <header>
         <div class="cabTxt">
-            <h1>Dev-Bruno Moreira</h1>
+            <div>
+                <h1>Dev-Bruno Moreira</h1>
+            </div>
             <nav class="menu">
                 <ul class="menu-bar">
                     <li class="item-menu"><a href="#inicio">Home</a></li>
@@ -27,106 +29,120 @@
         </div>
     </header>
 
-    <main>
-        <section class="texto" id="inicio">
-            <div>
+    <main class="container__principal">
+        <section class="container" id="inicio">
+            <div class="container__conteudo">
                 <h1>Olá,</h1>
-                <h2>Eu sou Bruno Moreira,
+                <h2>Eu sou <span class="container__conteudo__nome__destaque">Bruno Moreira,</span>
                     Desenvolvedor Front-end
                 </h2>
                 <h3>Bem-vindo ao meu portfólio, aqui você encontrá alguns projetos desenvolvidos por mim.</h3>
+
                 <div class="icones">
                     <a href="https://www.linkedin.com/in/brunmoreira/"><img src="img/linkedin.svg"
                             alt="Perfil do Linkedin"></a>
                     <a href="https://github.com/brumoreiras"><img src="img/Vector.svg" alt="Perfil do GitHub"></a>
                 </div>
+            </div>
+            <img src="img/developer.svg" alt="">
         </section>
-    </main>
 
-    <article class="sobre-mim" id="sobre-mim">
-        <div class="conteudo-sobre-mim">
-            <h1>Sobre</h1>
+        <article class="sobre-mim" id="sobre-mim">
+            <div class="conteudo-sobre-mim">
+                <h1>Sobre</h1>
 
-            <img src="img/brunoMoreira.jpeg" alt="Foto de perfil" class="img-perfil">
+                <img src="img/foto-perfil.png" alt="Foto de perfil" class="img-perfil">
 
-            <div class="conteudo-sobre">
-                <h1>Bruno Moreira</h1>
-                <p>Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas, estou me dedicando aos estudos com
-                    o objetivo em
-                    desenvolver novas competências e
-                    aperfeiçoar as que já possuo. Estudando tecnologias, linguagens de programação, boas práticas de
-                    programação, frameworks, metodologias ágeis, buscando sempre me manter atualizado. Quero poder com a
-                    minha experiência contribuir de modo positivo nessa nova jornada, que está por vir.<br>
-                    A procura de uma oportunidade </p>
+                <div class="conteudo-sobre">
+                    <h1>Bruno Moreira</h1>
+                    <p>Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas, estou me dedicando aos estudos
+                        com
+                        o objetivo em
+                        desenvolver novas competências e
+                        aperfeiçoar as que já possuo. Estudando tecnologias, linguagens de programação, boas práticas de
+                        programação, frameworks, metodologias ágeis, buscando sempre me manter atualizado. Quero poder
+                        com a
+                        minha experiência contribuir de modo positivo nessa nova jornada, que está por vir.<br>
+                        A procura de uma oportunidade </p>
 
-                <!-- <span>Telefone: <a href="https://wa.me/5511984069425">Whatsapp:</a> (11) 98406-9425</span> -->
+                    <!-- <span>Telefone: <a href="https://wa.me/5511984069425">Whatsapp:</a> (11) 98406-9425</span> -->
 
 
-                <div class="botao">
-                    <a href="https://wa.me/5511984069425"><input type="button" value="Contato"></a>
-                    <a href="doc/cv.pdf"><input type="button" value="Download CV"></a>
+                    <div class="botao">
+                        <a href="https://wa.me/5511984069425"><input type="button" value="Contato"></a>
+                        <a href="doc/cv.pdf"><input type="button" value="Download CV"></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
 
-    </article>
-
-    <section class="projetos" id="projetos">
-        <h1>Projetos</h1>
-        <div class="item">
-            <div class="texto-projeto">
-                <h1>Trippin</h1>
-                <p>Este é um projeto acadêmico, foi realizado com objetivo colocar em pratica e integrar as disciplinas
-                    do primeiro semestre, através do Projeto Integrador, nele foi empregado HTML, CSS e JavaScript, a
-                    ideia principal era construir um formulário de cadastro, realizar validações e autenticação do
-                    usuário, utilizamos como banco de dados o Local Storange para armazenar temporariamente os dados de
-                    login e assim fazer a autenticação.</p>
-                <button class="botao-informativo"><a href="https://projetopigit-github-io.vercel.app/">Clique aqui</a></button>
+        <section class="projetos" id="projetos">
+            <h1>Projetos</h1>
+            <div class="item">
+                <div class="texto-projeto">
+                    <h1>Trippin</h1>
+                    <p>Este é um projeto acadêmico, foi realizado com objetivo colocar em pratica e integrar as
+                        disciplinas
+                        do primeiro semestre, através do Projeto Integrador, nele foi empregado HTML, CSS e JavaScript,
+                        a
+                        ideia principal era construir um formulário de cadastro, realizar validações e autenticação do
+                        usuário, utilizamos como banco de dados o Local Storange para armazenar temporariamente os dados
+                        de
+                        login e assim fazer a autenticação.</p>
+                    <button class="botao-informativo"><a href="https://projetopigit-github-io.vercel.app/">Clique
+                            aqui</a></button>
+                </div>
+                <img src="img/trippin.jpg" alt="" class="imagem-projeto"><a href=""></a>
             </div>
-            <img src="img/trippin.jpg" alt="" class="imagem-projeto"><a href=""></a>
-        </div>
-        <div class="item">
-            <div class="logo-mais-novidades">
-                <h1>Em breve mais projetos</h1>
+            <div class="item">
+                <div class="logo-mais-novidades">
+                    <h1>Em breve mais projetos</h1>
+                </div>
+
             </div>
+            <div class="item">
+                <div class="logo-mais-novidades">
+                    <h1>Em breve mais projetos</h1>
+                </div>
 
-        </div>
-        <div class="item">
-            <div class="logo-mais-novidades">
-                <h1>Em breve mais projetos</h1>
             </div>
+            <div class="item">
+                <div class="logo-mais-novidades">
+                    <h1>Em breve mais projetos</h1>
+                </div>
 
-        </div>
-        <div class="item">
-            <div class="logo-mais-novidades">
-                <h1>Em breve mais projetos</h1>
             </div>
+            <div class="item">
+                <div class="logo-mais-novidades">
+                    <h1>Em breve mais projetos</h1>
+                </div>
 
-        </div>
-        <div class="item">
-            <div class="logo-mais-novidades">
-                <h1>Em breve mais projetos</h1>
             </div>
+            <div class="item">
+                <div class="logo-mais-novidades">
+                    <h1>Em breve mais projetos</h1>
+                </div>
 
-        </div>
-        <div class="item">
-            <div class="logo-mais-novidades">
-                <h1>Em breve mais projetos</h1>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <article class="titulo-soft-skills" id="softskills">
+            <h1>Minhas Habilidades</h1>
+            <p>Aqui estão algumas habilidades que possuo.</p>
 
-    <article class="titulo-soft-skills" id="softskills">
-        <h1>Minhas Habilidades</h1>
-        <p>Aqui estão algumas habilidades que possuo.</p>
+            <div class="soft-skills">
+                <img src="img/html5.png" alt="HTML">
+                <img src="img/css.png" alt="CSS">
+                <img src="img/js.png" alt="JavaScript">
+            </div>
+        </article>
 
-        <div class="soft-skills">
-            <img src="img/html5.png" alt="HTML">
-            <img src="img/css.png" alt="CSS">
-            <img src="img/js.png" alt="JavaScript">
-        </div>
-    </article>
+
+
+
+    </main>
+
+
 
     <footer>
         <p>&copy; Bruno Moreira Santos</p>

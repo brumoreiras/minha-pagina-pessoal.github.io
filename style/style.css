@@ -10,6 +10,7 @@
     --tipo-de-fonte-menu: 'Roboto Mono', monospace;
     --tipo-de-fonte-texto: 'Open Sans', sans-serif;
     --cor-fonte: #fff;
+    --cor-fonte-secundaria: #400191;
     --cor-background: black;
     --cor-background-hover: #400191;
     --borda-botoes: 3px #c9aaf4 solid;
@@ -22,23 +23,24 @@ body {
     background-color: var(--cor-background);
 }
 
-.cabTxt {
-
+.cabTxt {/* 
+    position: fixed;
+    width: 100vw;   */ 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 32px;
 }
 
-.cabTxt::before {
+/* .cabTxt::before {
     content: "";
     position: absolute;
     border: 1px solid white;
-    margin-top: 6rem;
-    width: 80%;
-}
+    margin-top: 4rem;
+    width: 90%;
+} */
 
 header {
-    margin: 10px auto;
     padding: 1em;
 
 }
@@ -104,50 +106,56 @@ header h1::after {
 
 }
 
-
-.texto {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     color: var(--cor-fonte);
     font-family: var(--tipo-de-fonte-texto);
-    margin: 10% auto;
-    padding: 2rem 2rem;
-    width: 60%;
 }
 
-.texto h1 {
+.container h1 {
     font-weight: 800;
     font-size: 2em;
 }
 
-.texto h2 {
+.container h2 {
     font-weight: 700;
     font-size: 3.5em;
 
 }
 
-.texto h3 {
+.container h3 {
     font-weight: 700;
     font-size: 1.5em;
 
 }
-
+.container img{
+    width: 40%;
+}
+.container__conteudo{
+    width: 50%;
+}
+.container__conteudo__nome__destaque{
+    color: var(--cor-fonte-secundaria);
+}
 .icones {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
     gap: 2rem;
+    padding: 16px;
 
 }
 
 .icones a {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 5rem;
-    height: 3rem;
+    padding: 8px;
     border: var(--borda-botoes);
     border-radius: 5rem;
     transition: 1s;
-    margin-top: 20%;
 }
 
 .icones a:hover {
@@ -158,6 +166,7 @@ header h1::after {
 
 .icones img {
     width: 1.5rem;
+  
 }
 
 @media screen and (max-width: 910px) {
