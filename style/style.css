@@ -322,6 +322,7 @@ header h1::after {
 .container__projeto__banner {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     padding: 16px;
 
