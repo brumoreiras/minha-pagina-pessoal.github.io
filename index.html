@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <div>
+    <header class="cabecalho">
+       <!--  <div class="cabecalho"> -->
+            <div class="cabecalho__titulo">
                 <h1>Bruno Moreira</h1>
             </div>
             <nav class="cabecalho__menu">
@@ -26,17 +26,18 @@
                     <li class="cabecalho__menu__link_itens"><a href="#softskills">Soft Skills</a></li>
                 </ul>
             </nav>
-        </div>
+       <!--  </div> -->
     </header>
 
     <main class="container__principal">
         <section class="container" id="inicio">
             <div class="container__conteudo">
                 <h1>Olá,</h1>
-                <h2>Eu sou <span class="container__conteudo__nome__destaque">Bruno Moreira,</span>
-                    Desenvolvedor Front-end
+                <h2>Eu sou <span class="container__conteudo__nome__destaque">Bruno Moreira,</span> Desenvolvedor Web
                 </h2>
-                <h3>Bem-vindo ao meu portfólio, aqui você encontrá alguns projetos desenvolvidos por mim.</h3>
+                <h3>Bem-vindo ao meu portfólio, aqui eu compartilho orgulhosamente meus principais projetos, selecionei
+                    meus melhores projetos para representar minha dedicação, habilidades e criatividade.
+                    Sinta-se à vontade para explorar e se inspirar com o que tenho a oferecer!</h3>
 
                 <div class="container__conteudo__icones">
                     <a href="https://www.linkedin.com/in/brunmoreira/"><img src="img/linkedin.svg"
@@ -44,7 +45,10 @@
                     <a href="https://github.com/brumoreiras"><img src="img/Vector.svg" alt="Perfil do GitHub"></a>
                 </div>
             </div>
-            <img class="container__imagem" src="img/developer.svg" alt="">
+            <div class="container__imagem">
+               <img  src="img/developer.svg" alt=""> 
+            </div>
+            
         </section>
 
         <section class="container__sobre__mim" id="sobre-mim">
@@ -53,15 +57,14 @@
             </div>
             <div class="container__sobre__mim__conteudo">
                 <h2>Sobre Mim</h2>
-                <p>Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas, estou me dedicando aos estudos
-                    com
-                    o objetivo em
-                    desenvolver novas competências e
-                    aperfeiçoar as que já possuo. Estudando tecnologias, linguagens de programação, boas práticas de
-                    programação, frameworks, metodologias ágeis, buscando sempre me manter atualizado. Quero poder
-                    com a
-                    minha experiência contribuir de modo positivo nessa nova jornada, que está por vir.<br>
-                    A procura de uma oportunidade </p>
+                <p>Olá! Sou Bruno Moreira, estudante de Tecnologia em Análise e Desenvolvimento de Sistemas. Há um ano,
+                    decidi deixar minha carreira como motorista de Uber para me dedicar totalmente aos estudos. Tenho
+                    construído habilidades em programação, tanto no front end quanto no back end, e meu objetivo é
+                    conquistar uma vaga para desenvolver minha carreira profissionalmente.</p>
+                    <p>Sou dedicado, focado nos estudos e amo enfrentar novos desafios. Minha resiliência me impulsiona a
+                    nunca desistir dos meus objetivos. Estou ansioso para contribuir com projetos inovadores e ser parte
+                    do sucesso no mundo da tecnologia.</p>
+                <p>Em busca de uma oportunidade! </p>
 
                 <div class="botao">
                     <a href="https://wa.me/5511984069425"><input type="button" value="Contato"></a>
@@ -134,10 +137,11 @@
                 </div>
 
                 <div class="container__projeto__conteudo ">
-                    <img src="img/cronometro-pomodoro.png" alt="" class="imagem do projeto pomodoro">
+                    <img src="img/cronometro-pomodoro.svg" alt="" class="imagem do projeto pomodoro">
                     <div class="container__projeto__conteudo__texto">
                         <h1>Cronômetro foco nos estudos</h1>
-                        <p>Desenvolvi um cronômetro Pomodoro para auxiliar nos estudos, utilizando tecnologias web e seguindo a técnica comprovada de gerenciamento de tempo.</p>
+                        <p>Desenvolvi um cronômetro Pomodoro para auxiliar nos estudos, utilizando tecnologias web e
+                            seguindo a técnica comprovada de gerenciamento de tempo.</p>
                         <div class="container__projeto__conteudo__texto__tecnologias">
 
                             <p>HTML</p>
@@ -150,6 +154,28 @@
                             href="https://brumoreiras.github.io/cronometro-pomodoro.github.io/">Acessar</a>
                         <a class="botao-informativo"
                             href="https://github.com/brumoreiras/cronometro-pomodoro.github.io.git">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="container__projeto__conteudo ">
+                    <img src="img/lista-de-produtos.svg" alt="" class="imagem do projeto lista de produtos">
+                    <div class="container__projeto__conteudo__texto">
+                        <h1>Lista de Produtos</h1>
+                        <p>Este é um projeto simples de uma loja virtual com funcionalidades básicas de adicionar
+                            produtos, exibir a lista de produtos, editar e excluir produtos. Os dados são armazenados no
+                            Local Storage do navegador, permitindo que a lista de produtos seja carregada de acordo com
+                            o que está armazenado.</p>
+                        <div class="container__projeto__conteudo__texto__tecnologias">
+
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="container__projeto__conteudo__botoes">
+                        <a class="botao-informativo" href="https://lista-de-produtos-github-io.vercel.app/">Acessar</a>
+                        <a class="botao-informativo"
+                            href="https://github.com/brumoreiras/lista-de-produtos.github.io.git">GitHub</a>
                     </div>
                 </div>
 
@@ -180,6 +206,14 @@
                 <div class="container__icones">
                     <h2>ReactJS</h2>
                     <img src="img/icons-reagir.svg" alt="Icone ReactJS">
+                </div>
+                <div class="container__icones">
+                    <h2>Git</h2>
+                    <img src="img/icons-git.svg" alt="Icone GIT">
+                </div>
+                <div class="container__icones">
+                    <h2>GitHub</h2>
+                    <img src="img/icons-github.svg" alt="Icone GITHUB">
                 </div>
 
             </div>

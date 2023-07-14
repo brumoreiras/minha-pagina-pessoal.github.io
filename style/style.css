@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Krona+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,9 +8,10 @@
 }
 
 :root {
-    --tipo-de-fonte-header: 'Source Code Pro', monoespaçado;
-    --tipo-de-fonte-menu: 'Roboto Mono', monospace;
-    --tipo-de-fonte-texto: 'Open Sans', sans-serif;
+    --tipo-de-fonte-meu-nome: 'Akronim', cursive;
+    --tipo-de-fonte-header: 'Krona One', sans-serif;
+    /*  --tipo-de-fonte-menu: 'Roboto Mono', monospace; */
+    --tipo-de-fonte-texto: 'Montserrat', sans-serif;
 
     --cor-fonte: #fff;
     --cor-fonte-secundaria: #400191;
@@ -28,50 +31,64 @@ body {
 
 .cabecalho {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
-}
+    padding: 1rem;
 
-
-header {
-    padding: 1em;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 100;
     background-color: var(--cor-background);
+    /*  border: 1px solid red; */
+
 }
 
-header h1 {
-    font-family: var(--tipo-de-fonte-header);
-    font-size: 1.5em;
-    font-weight: 700;
+.cabecalho__titulo h1 {
+    font-family: var(--tipo-de-fonte-meu-nome);
+    font-size: 2.5rem;
+    font-weight: 400;
     color: var(--cor-fonte);
+    letter-spacing: .2rem;
 }
 
-header h1::before {
-    font-size: 1.2em;
+/* header h1::before {
+    font-family: var(--tipo-de-fonte-header);
+    font-size: 1em;
     content: "{ ";
 }
 
 header h1::after {
-    font-size: 1.2em;
+    font-family: var(--tipo-de-fonte-header);
+    font-size: 1em;
     content: " }";
-}
+} */
+
+/* .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+} */
+
+
 
 .cabecalho__menu {
-    font-family: var(--tipo-de-fonte-menu);
-    font-weight: 800;
-    font-size: 1em;
+    font-family: var(--tipo-de-fonte-header);
+    font-weight: 400;
+    font-size: 1rem;
 
 }
 
 .cabecalho__menu__link {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
     text-transform: uppercase;
     text-decoration: solid;
-    gap: 3rem;
+    margin: 0 8px;
 }
 
 .cabecalho__menu__link_itens {
@@ -89,21 +106,18 @@ header h1::after {
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
     .cabecalho {
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 
     .cabecalho__menu__link {
         margin: 1em 0;
-        gap: 1.5em;
-        font-size: 0.6em;
+        gap: .7em;
+        font-size: .7rem;
     }
 
-    .cabecalho::before {
-        width: 90%;
-    }
+
 
 }
 
@@ -111,14 +125,18 @@ header h1::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     color: var(--cor-fonte);
     font-family: var(--tipo-de-fonte-texto);
     padding: 5%;
+    margin-top: 6.5%;
+    height: 100vh;
+
 }
 
 .container__conteudo {
     width: 50%;
+
 }
 
 .container__conteudo h1 {
@@ -128,18 +146,25 @@ header h1::after {
 
 .container__conteudo h2 {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
 
 }
 
 .container__conteudo h3 {
-    font-weight: 300;
+    text-align: justify;
+    font-weight: 200;
     font-size: 1em;
 
 }
 
 .container__imagem {
-    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__imagem img {
+    width: 80%;
 }
 
 
@@ -181,7 +206,8 @@ header h1::after {
     }
 
     .container__conteudo {
-        width: auto;
+        width: 100%;
+
     }
 
     .container__conteudo__icones {
@@ -200,7 +226,10 @@ header h1::after {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    padding: 32px;
+    padding: 2rem;
+    height: 100vh;
+
+
 }
 
 .img-perfil {
@@ -218,34 +247,39 @@ header h1::after {
 
 }
 
+.container__sobre__mim__conteudo h2 {
+    font-family: var(--tipo-de-fonte-texto);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
 .container__sobre__mim__conteudo p {
+    font-family: var(--tipo-de-fonte-texto);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     text-align: justify;
 
 }
 
-.container__sobre__mim__conteudo h2 {
-    font-size: 2rem;
-}
+
 
 .botao {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 16px;
+    padding: 1rem;
     gap: 2rem;
 }
 
 .botao input {
-    font-family: var(--tipo-de-fonte-texto);
-    font-weight: 700;
+    font-family: var(--tipo-de-fonte-header);
+    font-weight: 400;
     font-size: 1rem;
     background-color: var(--cor-background);
     color: var(--cor-fonte);
     border: var(--borda-botoes);
     border-radius: 1rem;
-    width: 9rem;
+    width: 12rem;
     padding: 16px;
     transition: 1s;
 }
@@ -261,6 +295,7 @@ header h1::after {
         flex-direction: column;
         width: auto;
         gap: 16px;
+        height: auto;
     }
 
     .container__sobre__mim__conteudo {
@@ -308,7 +343,7 @@ header h1::after {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 4.5rem;
+    padding: 5rem;
 }
 
 .projeto__titulo__principal {
@@ -325,7 +360,6 @@ header h1::after {
     flex-wrap: wrap;
     gap: 8px;
     padding: 16px;
-
 }
 
 .container__projeto__conteudo {
@@ -342,6 +376,7 @@ header h1::after {
 .container__projeto__conteudo img {
     width: 332px;
     height: 176px;
+
 }
 
 .container__projeto__conteudo__texto {
@@ -351,8 +386,8 @@ header h1::after {
 }
 
 .container__projeto__conteudo__texto p {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 300;
+    font-size: .8rem;
     color: var(--cor-fonte-terciaria);
     padding: 8px 0;
 }
@@ -376,7 +411,7 @@ header h1::after {
     background: none;
     font-family: var(--tipo-de-fonte-texto);
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     border: var(--borda-botoes);
     width: 150px;
     padding: 0.5rem;
@@ -420,11 +455,14 @@ header h1::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 10%;
+    height: 100vh;
 }
 
 .container__soft__skills h1 {
     font-family: var(--tipo-de-fonte-texto);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2em;
     color: var(--cor-fonte);
     text-align: center;
@@ -467,6 +505,12 @@ header h1::after {
     width: 4rem;
 }
 
+@media (max-width: 1200px) {
+    .container__soft__skills {
+        height: auto;
+    }
+}
+
 footer {
     color: white;
     text-align: center;
@@ -476,6 +520,7 @@ footer {
     position: relative;
     padding: 5% 5%;
 }
-.rodape{
+
+.rodape {
     padding: 16px;
 }
